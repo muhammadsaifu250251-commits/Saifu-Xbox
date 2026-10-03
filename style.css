@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f6f1e8;
+    color: #24231f;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: min(100% - 32px, 600px);
+    margin: auto;
+    padding: 40px 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+.subtitle {
+    color: #666056;
+    margin-bottom: 25px;
+}
+
+.card {
+    background: #fffdf8;
+    border: 1px solid #cfc7b8;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+button {
+    width: 100%;
+    min-height: 52px;
+    border: none;
+    border-radius: 5px;
+    background: #24513f;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #183a2d;
+}
+
+#webcam-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#webcam-container canvas {
+    max-width: 100%;
+    border: 1px solid #cfc7b8;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 16px;
+    border-top: 4px solid #d97732;
+    background: #f6f1e8;
+}
+
+.result-title {
+    margin-top: 0;
+    font-weight: bold;
+}
+
+#label-container div {
+    margin: 6px 0;
+    font-family: monospace;
+}
+
+.info {
+    margin-top: 25px;
+}
+
+.info h2 {
+    font-size: 20px;
+}
+
+.shapes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.shapes span {
+    padding: 8px 12px;
+    border: 1px solid #cfc7b8;
+    background: #fffdf8;
+    border-radius: 4px;
+}

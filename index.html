@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI วิเคราะห์รูปทรงใบหน้า</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>AI วิเคราะห์รูปทรงใบหน้า</h1>
+        <p class="subtitle">
+            ใช้ AI วิเคราะห์รูปทรงใบหน้าจากกล้อง
+        </p>
+
+        <section class="card">
+
+            <button id="startButton" onclick="init()">
+                เปิดกล้อง
+            </button>
+
+            <div id="webcam-container"></div>
+
+            <div id="result">
+                <p class="result-title">ผลการวิเคราะห์</p>
+                <div id="label-container">
+                    กด “เปิดกล้อง” เพื่อเริ่มวิเคราะห์
+                </div>
+            </div>
+
+        </section>
+
+        <section class="info">
+            <h2>รูปทรงที่รองรับ</h2>
+
+            <div class="shapes">
+                <span>Heart</span>
+                <span>Oblong</span>
+                <span>Oval</span>
+                <span>Round</span>
+                <span>Square</span>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
